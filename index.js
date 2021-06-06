@@ -18,3 +18,8 @@ function deleteFromEmployeeByKey(employee, key) {
   delete copy[key];
   return copy;
 }
+
+function destructivelyDeleteFromEmployeeByKey(employee, key) {
+  delete employee[key];
+  return employee;
+}
